@@ -1,3 +1,4 @@
 date,file,rows,purpose,notes
 2026-10-13,data/seen.csv,544,Manus's original handles loaded as already-seen,starting dedupe list
 2026-10-13,data/daily/2026-10-13-holds.csv,3,First 10-creator request (EU+UK parents w/ basketball): 0 qualified found; 3 holds,tools cannot verify country/engagement; see chat
+2026-10-13,data/daily/2026-10-13-qualified.csv,1,Parents-only EU run: 1 qualified (France),verified via logged-in profile+post pages; 21 others rejected (inactive/not basketball/not creators)
