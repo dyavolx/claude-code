@@ -1,0 +1,2 @@
+date,file,rows,purpose,notes
+2026-10-13,data/seen.csv,544,Manus's original handles loaded as already-seen,starting dedupe list

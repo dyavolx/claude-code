@@ -9,6 +9,9 @@ Active campaign: clients/silentball.md (also holds the Google Sheet link)
 Platform: Instagram only (public data)
 Daily target: 110-120 creators, 100-20,000 followers, Europe first (priority six), 10 per 120 from the USA
 
+## Which tool to use
+Read .claude/skills/orchestrator/SKILL.md first (skill/tool router). After giving Ali any CSV, log it in data/delivered.csv.
+
 ## Files (read commands.md first; its rules are mandatory)
 - commands.md: mandatory commands (mix, engagement, activity, dedupe)
 - tokens.md: keep token use low, free-API fallback
@@ -16,6 +19,7 @@ Daily target: 110-120 creators, 100-20,000 followers, Europe first (priority six
 - scoring.md: how to score, daily CSV columns
 - discovery.md: how creators are found, dedupe
 - daily-run.md: the daily steps
+- data/delivered.csv: every file given to Ali (date, file, rows, purpose)
 - data/seen.csv: every creator ever sourced. Starts with Manus's 544 handles.
 - data/manus_creators_archive.csv: Manus's full records. Look up only if needed.
 - data/daily/: one output CSV per day
