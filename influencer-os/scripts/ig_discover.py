@@ -46,9 +46,16 @@ def act(page):
             if u in seen: continue
             cands.setdefault(u, a)
     out["candidates"] = len(cands)
+    out["cand_list"] = cands
+    bad = 0
     for u in list(cands)[:MAX_PROFILES]:
+        time.sleep(random.uniform(8, 14))
         d = get(page, f"https://www.instagram.com/api/v1/users/web_profile_info/?username={u}")
-        if not d: continue
+        if not d:
+            bad += 1
+            if bad >= 3: out["errors"].append("stopped: 3 throttled/failed in a row"); break
+            continue
+        bad = 0
         usr = d.get("data", {}).get("user")
         if not usr: continue
         media = usr["edge_owner_to_timeline_media"]["edges"]
